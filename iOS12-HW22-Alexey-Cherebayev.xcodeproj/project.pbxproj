@@ -10,10 +10,12 @@
 		FAFB83C82BD6040500D7F0D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB83C72BD6040500D7F0D2 /* AppDelegate.swift */; };
 		FAFB83CA2BD6040500D7F0D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB83C92BD6040500D7F0D2 /* SceneDelegate.swift */; };
 		FAFB83CC2BD6040500D7F0D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFB83CB2BD6040500D7F0D2 /* ViewController.swift */; };
-		FAFB83CF2BD6040500D7F0D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFB83CD2BD6040500D7F0D2 /* Main.storyboard */; };
-		FAFB83D22BD6040500D7F0D2 /* iOS12_HW22_Alexey_Cherebayev.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAFB83D02BD6040500D7F0D2 /* iOS12_HW22_Alexey_Cherebayev.xcdatamodeld */; };
+		FAFB83D22BD6040500D7F0D2 /* UsersDb.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAFB83D02BD6040500D7F0D2 /* UsersDb.xcdatamodeld */; };
 		FAFB83D42BD6040600D7F0D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAFB83D32BD6040600D7F0D2 /* Assets.xcassets */; };
 		FAFB83D72BD6040600D7F0D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFB83D52BD6040600D7F0D2 /* LaunchScreen.storyboard */; };
+		FAFB83E52BD6090A00D7F0D2 /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = FAFB83E42BD6090A00D7F0D2 /* CombineCocoa */; };
+		FAFB83E82BD6091900D7F0D2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FAFB83E72BD6091900D7F0D2 /* SnapKit */; };
+		FAFB83EA2BD6091900D7F0D2 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = FAFB83E92BD6091900D7F0D2 /* SnapKit-Dynamic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +23,6 @@
 		FAFB83C72BD6040500D7F0D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAFB83C92BD6040500D7F0D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FAFB83CB2BD6040500D7F0D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FAFB83CE2BD6040500D7F0D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAFB83D12BD6040500D7F0D2 /* iOS12_HW22_Alexey_Cherebayev.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOS12_HW22_Alexey_Cherebayev.xcdatamodel; sourceTree = "<group>"; };
 		FAFB83D32BD6040600D7F0D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAFB83D62BD6040600D7F0D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -33,6 +34,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAFB83E52BD6090A00D7F0D2 /* CombineCocoa in Frameworks */,
+				FAFB83E82BD6091900D7F0D2 /* SnapKit in Frameworks */,
+				FAFB83EA2BD6091900D7F0D2 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,16 +62,55 @@
 		FAFB83C62BD6040500D7F0D2 /* iOS12-HW22-Alexey-Cherebayev */ = {
 			isa = PBXGroup;
 			children = (
+				FAFB83DE2BD6082800D7F0D2 /* App */,
+				FAFB83DF2BD6083900D7F0D2 /* Model */,
+				FAFB83E12BD6087400D7F0D2 /* UI */,
+				FAFB83E22BD6089E00D7F0D2 /* Serices */,
+				FAFB83E02BD6086100D7F0D2 /* Resources */,
+			);
+			path = "iOS12-HW22-Alexey-Cherebayev";
+			sourceTree = "<group>";
+		};
+		FAFB83DE2BD6082800D7F0D2 /* App */ = {
+			isa = PBXGroup;
+			children = (
 				FAFB83C72BD6040500D7F0D2 /* AppDelegate.swift */,
 				FAFB83C92BD6040500D7F0D2 /* SceneDelegate.swift */,
-				FAFB83CB2BD6040500D7F0D2 /* ViewController.swift */,
-				FAFB83CD2BD6040500D7F0D2 /* Main.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FAFB83DF2BD6083900D7F0D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAFB83D02BD6040500D7F0D2 /* UsersDb.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FAFB83E02BD6086100D7F0D2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				FAFB83D32BD6040600D7F0D2 /* Assets.xcassets */,
 				FAFB83D52BD6040600D7F0D2 /* LaunchScreen.storyboard */,
 				FAFB83D82BD6040600D7F0D2 /* Info.plist */,
-				FAFB83D02BD6040500D7F0D2 /* iOS12_HW22_Alexey_Cherebayev.xcdatamodeld */,
 			);
-			path = "iOS12-HW22-Alexey-Cherebayev";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FAFB83E12BD6087400D7F0D2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FAFB83CB2BD6040500D7F0D2 /* ViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		FAFB83E22BD6089E00D7F0D2 /* Serices */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Serices;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +129,11 @@
 			dependencies = (
 			);
 			name = "iOS12-HW22-Alexey-Cherebayev";
+			packageProductDependencies = (
+				FAFB83E42BD6090A00D7F0D2 /* CombineCocoa */,
+				FAFB83E72BD6091900D7F0D2 /* SnapKit */,
+				FAFB83E92BD6091900D7F0D2 /* SnapKit-Dynamic */,
+			);
 			productName = "iOS12-HW22-Alexey-Cherebayev";
 			productReference = FAFB83C42BD6040500D7F0D2 /* iOS12-HW22-Alexey-Cherebayev.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +162,10 @@
 				Base,
 			);
 			mainGroup = FAFB83BB2BD6040500D7F0D2;
+			packageReferences = (
+				FAFB83E32BD6090A00D7F0D2 /* XCRemoteSwiftPackageReference "CombineCocoa" */,
+				FAFB83E62BD6091900D7F0D2 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = FAFB83C52BD6040500D7F0D2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -130,7 +182,6 @@
 			files = (
 				FAFB83D72BD6040600D7F0D2 /* LaunchScreen.storyboard in Resources */,
 				FAFB83D42BD6040600D7F0D2 /* Assets.xcassets in Resources */,
-				FAFB83CF2BD6040500D7F0D2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAFB83CC2BD6040500D7F0D2 /* ViewController.swift in Sources */,
-				FAFB83D22BD6040500D7F0D2 /* iOS12_HW22_Alexey_Cherebayev.xcdatamodeld in Sources */,
+				FAFB83D22BD6040500D7F0D2 /* UsersDb.xcdatamodeld in Sources */,
 				FAFB83C82BD6040500D7F0D2 /* AppDelegate.swift in Sources */,
 				FAFB83CA2BD6040500D7F0D2 /* SceneDelegate.swift in Sources */,
 			);
@@ -151,14 +202,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FAFB83CD2BD6040500D7F0D2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FAFB83CE2BD6040500D7F0D2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FAFB83D52BD6040600D7F0D2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -368,14 +411,51 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		FAFB83E32BD6090A00D7F0D2 /* XCRemoteSwiftPackageReference "CombineCocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CombineCommunity/CombineCocoa";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.1;
+			};
+		};
+		FAFB83E62BD6091900D7F0D2 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FAFB83E42BD6090A00D7F0D2 /* CombineCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAFB83E32BD6090A00D7F0D2 /* XCRemoteSwiftPackageReference "CombineCocoa" */;
+			productName = CombineCocoa;
+		};
+		FAFB83E72BD6091900D7F0D2 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAFB83E62BD6091900D7F0D2 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		FAFB83E92BD6091900D7F0D2 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAFB83E62BD6091900D7F0D2 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
+
 /* Begin XCVersionGroup section */
-		FAFB83D02BD6040500D7F0D2 /* iOS12_HW22_Alexey_Cherebayev.xcdatamodeld */ = {
+		FAFB83D02BD6040500D7F0D2 /* UsersDb.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				FAFB83D12BD6040500D7F0D2 /* iOS12_HW22_Alexey_Cherebayev.xcdatamodel */,
 			);
 			currentVersion = FAFB83D12BD6040500D7F0D2 /* iOS12_HW22_Alexey_Cherebayev.xcdatamodel */;
-			path = iOS12_HW22_Alexey_Cherebayev.xcdatamodeld;
+			path = UsersDb.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
